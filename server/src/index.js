@@ -2,9 +2,13 @@ import express from 'express';
 import http from 'http';
 import serverConfig from '../src/frameworks/webserver/server.js';
 import expressConfig from '../src/frameworks/webserver/express.js'
+import connectToMongoDb from './frameworks/webserver/database/mongoose/connection.js';
 
 const app = express();
 const server = http.createServer(app);
+
+//* connecting mongoDb 
+connectToMongoDb();
 
 //* express config connection
 expressConfig(app);
