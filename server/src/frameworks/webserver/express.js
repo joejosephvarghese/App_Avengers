@@ -2,7 +2,7 @@ import express from 'express';
 import morgan from 'morgan';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
-import configKeys from '../config.js';
+import configKeys from '../../config.js';
 import mongoSanitize from 'express-mongo-sanitize';
 import helmet from 'helmet';
 import rateLimit from 'express-rate-limit';

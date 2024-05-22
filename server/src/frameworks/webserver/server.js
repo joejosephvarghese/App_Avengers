@@ -1,4 +1,4 @@
-import configKeys from "../config.js";
+import configKeys from "../../config.js"
 
 const serverConfig = (server) => {
     const startServer = () => {

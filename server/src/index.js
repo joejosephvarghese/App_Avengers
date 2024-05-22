@@ -1,7 +1,7 @@
 import express from 'express';
 import http from 'http';
-import serverConfig from '../src/webserver/server.js';
-import expressConfig from '../src/webserver/express.js'
+import serverConfig from '../src/frameworks/webserver/server.js';
+import expressConfig from '../src/frameworks/webserver/express.js'
 
 const app = express();
 const server = http.createServer(app);
